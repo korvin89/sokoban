@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/MovableEntity/MovableEntity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/tileset.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Box/Box.gd" type="Script" id=3]
+
+[node name="Box" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="." index="5"]
+z_index = 1
+texture = ExtResource( 2 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 74
+
+[connection signal="area_entered" from="." to="." method="_on_Box_area_entered"]

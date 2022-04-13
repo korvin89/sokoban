@@ -1,0 +1,723 @@
+[gd_scene load_steps=39 format=2]
+
+[ext_resource path="res://materials/boards.tres" type="TileSet" id=1]
+[ext_resource path="res://scenes/Background/Background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Small Text/16.png" type="Texture" id=3]
+[ext_resource path="res://assets/Big Text/19.png" type="Texture" id=4]
+[ext_resource path="res://assets/Small Text/13.png" type="Texture" id=5]
+[ext_resource path="res://assets/Small Text/5.png" type="Texture" id=6]
+[ext_resource path="res://assets/Small Text/14.png" type="Texture" id=7]
+[ext_resource path="res://assets/Small Text/25.png" type="Texture" id=8]
+[ext_resource path="res://assets/Small Text/22.png" type="Texture" id=9]
+[ext_resource path="res://assets/Small Text/15.png" type="Texture" id=10]
+[ext_resource path="res://assets/Small Text/19.png" type="Texture" id=11]
+[ext_resource path="res://assets/Small Text/20.png" type="Texture" id=12]
+[ext_resource path="res://assets/Small Text/21.png" type="Texture" id=13]
+[ext_resource path="res://assets/Big Text/1.png" type="Texture" id=14]
+[ext_resource path="res://assets/Small Text/9.png" type="Texture" id=15]
+[ext_resource path="res://assets/Small Text/1.png" type="Texture" id=16]
+[ext_resource path="res://assets/Big Text/15.png" type="Texture" id=17]
+[ext_resource path="res://assets/Big Text/2.png" type="Texture" id=18]
+[ext_resource path="res://assets/Big Text/11.png" type="Texture" id=19]
+[ext_resource path="res://assets/Big Text/14.png" type="Texture" id=20]
+[ext_resource path="res://assets/Small Text/8.png" type="Texture" id=21]
+[ext_resource path="res://assets/Small Icons/1.png" type="Texture" id=22]
+[ext_resource path="res://materials/btns.tres" type="TileSet" id=23]
+[ext_resource path="res://misc/TextureButton.gd" type="Script" id=24]
+[ext_resource path="res://assets/Small Text/12.png" type="Texture" id=25]
+[ext_resource path="res://scenes/GameMenu/GameMenu.gd" type="Script" id=26]
+[ext_resource path="res://scenes/GameMenu/ModeOption.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/Small Icons/8.png" type="Texture" id=28]
+[ext_resource path="res://assets/Small Text/48.png" type="Texture" id=29]
+[ext_resource path="res://scenes/GameMenu/LevelsPage.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/Small Text/29.png" type="Texture" id=31]
+[ext_resource path="res://assets/Small Text/36.png" type="Texture" id=32]
+[ext_resource path="res://assets/Small Text/37.png" type="Texture" id=33]
+[ext_resource path="res://assets/Small Text/2.png" type="Texture" id=34]
+[ext_resource path="res://assets/Small Icons/9.png" type="Texture" id=35]
+[ext_resource path="res://assets/Small Icons/12.png" type="Texture" id=36]
+[ext_resource path="res://assets/Small Icons/23.png" type="Texture" id=37]
+[ext_resource path="res://assets/Small Text/28.png" type="Texture" id=38]
+
+[node name="GameMenu" type="Node2D"]
+script = ExtResource( 26 )
+
+[node name="Background" parent="." instance=ExtResource( 2 )]
+
+[node name="Container" type="Node2D" parent="."]
+position = Vector2( -8, -8 )
+
+[node name="Board" type="TileMap" parent="Container"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65537, 536870926, 0, 65538, 536870925, 0, 65539, 536870925, 0, 65540, 536870925, 0, 65541, 536870924, 0, 131073, 536870914, 0, 131074, 536870913, 0, 131075, 536870913, 0, 131076, 536870913, 0, 131077, 536870912, 0, 196609, 536870918, 0, 196610, 536870917, 0, 196611, 536870917, 0, 196612, 536870917, 0, 196613, 536870916, 0, 262145, 536870918, 0, 262146, 536870917, 0, 262147, 536870917, 0, 262148, 536870917, 0, 262149, 536870916, 0, 327681, 536870918, 0, 327682, 536870917, 0, 327683, 536870917, 0, 327684, 536870917, 0, 327685, 536870916, 0, 393217, 536870918, 0, 393218, 536870917, 0, 393219, 536870917, 0, 393220, 536870917, 0, 393221, 536870916, 0, 458753, 536870918, 0, 458754, 536870917, 0, 458755, 536870917, 0, 458756, 536870917, 0, 458757, 536870916, 0, 524289, 536870918, 0, 524290, 536870917, 0, 524291, 536870917, 0, 524292, 536870917, 0, 524293, 536870916, 0, 589825, 536870922, 0, 589826, 536870921, 0, 589827, 536870921, 0, 589828, 536870921, 0, 589829, 536870920, 0 )
+
+[node name="Paper" type="TileMap" parent="Container"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65537, 536870955, 0, 65538, 536870954, 0, 65539, 536870954, 0, 65540, 536870954, 0, 65541, 536870953, 0, 131073, 536870946, 0, 131074, 536870945, 0, 131075, 536870945, 0, 131076, 536870945, 0, 131077, 536870944, 0, 196609, 38, 0, 196610, 39, 0, 196611, 39, 0, 196612, 39, 0, 196613, 40, 0, 655362, 41, 0, 655363, 42, 0, 655364, 42, 0, 655365, 43, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Title" type="Node2D" parent="Container"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Title"]
+margin_left = 48.0
+margin_top = 40.0
+margin_right = 176.0
+margin_bottom = 56.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Title/VBoxContainer"]
+margin_top = 2.0
+margin_right = 128.0
+margin_bottom = 13.0
+custom_constants/separation = 2
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 23.0
+margin_right = 33.0
+margin_bottom = 11.0
+texture = ExtResource( 4 )
+
+[node name="Letter2" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 35.0
+margin_right = 45.0
+margin_bottom = 11.0
+texture = ExtResource( 17 )
+
+[node name="Letter3" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 47.0
+margin_right = 57.0
+margin_bottom = 11.0
+texture = ExtResource( 19 )
+
+[node name="Letter4" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 59.0
+margin_right = 69.0
+margin_bottom = 11.0
+texture = ExtResource( 17 )
+
+[node name="Letter5" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 71.0
+margin_right = 81.0
+margin_bottom = 11.0
+texture = ExtResource( 18 )
+
+[node name="Letter6" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 83.0
+margin_right = 93.0
+margin_bottom = 11.0
+texture = ExtResource( 14 )
+
+[node name="Letter7" type="TextureRect" parent="Container/Title/VBoxContainer/HBoxContainer"]
+margin_left = 95.0
+margin_right = 105.0
+margin_bottom = 11.0
+texture = ExtResource( 20 )
+
+[node name="MainMenuHeader" type="Node2D" parent="Container"]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/MainMenuHeader"]
+margin_left = 48.0
+margin_top = 80.0
+margin_right = 176.0
+margin_bottom = 112.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/MainMenuHeader/VBoxContainer"]
+margin_top = 13.0
+margin_right = 128.0
+margin_bottom = 19.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer"]
+margin_left = 38.0
+margin_right = 61.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 5 )
+
+[node name="Letter2" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 16 )
+
+[node name="Letter3" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 15 )
+
+[node name="Letter4" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 7 )
+
+[node name="Word2" type="HBoxContainer" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer"]
+margin_left = 66.0
+margin_right = 89.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 5 )
+
+[node name="Letter2" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter3" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 7 )
+
+[node name="Letter4" type="TextureRect" parent="Container/MainMenuHeader/VBoxContainer/HBoxContainer/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 13 )
+
+[node name="LvlHeader" type="Node2D" parent="Container"]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/LvlHeader"]
+margin_left = 48.0
+margin_top = 80.0
+margin_right = 176.0
+margin_bottom = 112.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/LvlHeader/VBoxContainer"]
+margin_top = 13.0
+margin_right = 128.0
+margin_bottom = 19.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="Container/LvlHeader/VBoxContainer/HBoxContainer"]
+margin_left = 42.0
+margin_right = 86.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_right = 8.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter2" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 9.0
+margin_right = 14.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter3" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 15.0
+margin_right = 20.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter4" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 21.0
+margin_right = 26.0
+margin_bottom = 6.0
+texture = ExtResource( 9 )
+
+[node name="Letter5" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 27.0
+margin_right = 32.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter6" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 33.0
+margin_right = 38.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter7" type="TextureRect" parent="Container/LvlHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 39.0
+margin_right = 44.0
+margin_bottom = 6.0
+texture = ExtResource( 11 )
+
+[node name="OptHeader" type="Node2D" parent="Container"]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/OptHeader"]
+margin_left = 48.0
+margin_top = 80.0
+margin_right = 176.0
+margin_bottom = 112.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/OptHeader/VBoxContainer"]
+margin_top = 13.0
+margin_right = 128.0
+margin_bottom = 19.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="Container/OptHeader/VBoxContainer/HBoxContainer"]
+margin_left = 39.0
+margin_right = 89.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_right = 8.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter2" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 9.0
+margin_right = 14.0
+margin_bottom = 6.0
+texture = ExtResource( 10 )
+
+[node name="Letter3" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 15.0
+margin_right = 20.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 21.0
+margin_right = 26.0
+margin_bottom = 6.0
+texture = ExtResource( 12 )
+
+[node name="Letter5" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 27.0
+margin_right = 32.0
+margin_bottom = 6.0
+texture = ExtResource( 15 )
+
+[node name="Letter6" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 33.0
+margin_right = 38.0
+margin_bottom = 6.0
+texture = ExtResource( 10 )
+
+[node name="Letter7" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 39.0
+margin_right = 44.0
+margin_bottom = 6.0
+texture = ExtResource( 7 )
+
+[node name="Letter8" type="TextureRect" parent="Container/OptHeader/VBoxContainer/HBoxContainer/Word1"]
+margin_left = 45.0
+margin_right = 50.0
+margin_bottom = 6.0
+texture = ExtResource( 11 )
+
+[node name="PlayBtn" type="TextureButton" parent="Container"]
+visible = false
+margin_left = 64.0
+margin_top = 128.0
+margin_right = 160.0
+margin_bottom = 160.0
+script = ExtResource( 24 )
+
+[node name="Texture" type="TileMap" parent="Container/PlayBtn"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 5, 0, 1, 6, 0, 2, 536870918, 0, 3, 536870918, 0, 4, 536870918, 0, 5, 536870917, 0, 65536, 13, 0, 65537, 14, 0, 65538, 536870926, 0, 65539, 536870926, 0, 65540, 536870926, 0, 65541, 536870925, 0 )
+
+[node name="Label" type="VBoxContainer" parent="Container/PlayBtn"]
+margin_right = 96.0
+margin_bottom = 32.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/PlayBtn/Label"]
+margin_top = 13.0
+margin_right = 96.0
+margin_bottom = 19.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/PlayBtn/Label/HBoxContainer"]
+margin_left = 32.0
+margin_right = 40.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter2" type="TextureRect" parent="Container/PlayBtn/Label/HBoxContainer"]
+margin_left = 41.0
+margin_right = 46.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter3" type="TextureRect" parent="Container/PlayBtn/Label/HBoxContainer"]
+margin_left = 47.0
+margin_right = 52.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter4" type="TextureRect" parent="Container/PlayBtn/Label/HBoxContainer"]
+margin_left = 53.0
+margin_right = 58.0
+margin_bottom = 6.0
+texture = ExtResource( 16 )
+
+[node name="Letter5" type="TextureRect" parent="Container/PlayBtn/Label/HBoxContainer"]
+margin_left = 59.0
+margin_right = 64.0
+margin_bottom = 6.0
+texture = ExtResource( 8 )
+
+[node name="LvlBtn" type="TextureButton" parent="Container"]
+visible = false
+margin_left = 64.0
+margin_top = 168.0
+margin_right = 160.0
+margin_bottom = 200.0
+script = ExtResource( 24 )
+
+[node name="Texture" type="TileMap" parent="Container/LvlBtn"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 536870919, 0, 1, 536870918, 0, 2, 536870918, 0, 3, 536870918, 0, 4, 536870918, 0, 5, 536870917, 0, 65536, 536870927, 0, 65537, 536870926, 0, 65538, 536870926, 0, 65539, 536870926, 0, 65540, 536870926, 0, 65541, 536870925, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="VBoxContainer" parent="Container/LvlBtn"]
+margin_right = 96.0
+margin_bottom = 32.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/LvlBtn/Label"]
+margin_top = 13.0
+margin_right = 96.0
+margin_bottom = 19.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 26.0
+margin_right = 34.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter2" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 35.0
+margin_right = 40.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter3" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 41.0
+margin_right = 46.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter4" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 47.0
+margin_right = 52.0
+margin_bottom = 6.0
+texture = ExtResource( 9 )
+
+[node name="Letter5" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 53.0
+margin_right = 58.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter6" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 59.0
+margin_right = 64.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter7" type="TextureRect" parent="Container/LvlBtn/Label/HBoxContainer"]
+margin_left = 65.0
+margin_right = 70.0
+margin_bottom = 6.0
+texture = ExtResource( 11 )
+
+[node name="OptBtn" type="TextureButton" parent="Container"]
+visible = false
+margin_left = 64.0
+margin_top = 208.0
+margin_right = 160.0
+margin_bottom = 240.0
+script = ExtResource( 24 )
+
+[node name="Texture" type="TileMap" parent="Container/OptBtn"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 536870919, 0, 1, 536870918, 0, 2, 536870918, 0, 3, 536870918, 0, 4, 536870918, 0, 5, 536870917, 0, 65536, 536870927, 0, 65537, 536870926, 0, 65538, 536870926, 0, 65539, 536870926, 0, 65540, 536870926, 0, 65541, 536870925, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="VBoxContainer" parent="Container/OptBtn"]
+margin_right = 96.0
+margin_bottom = 32.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/OptBtn/Label"]
+margin_top = 13.0
+margin_right = 96.0
+margin_bottom = 19.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 23.0
+margin_right = 31.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter2" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 32.0
+margin_right = 37.0
+margin_bottom = 6.0
+texture = ExtResource( 10 )
+
+[node name="Letter3" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 38.0
+margin_right = 43.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 44.0
+margin_right = 49.0
+margin_bottom = 6.0
+texture = ExtResource( 12 )
+
+[node name="Letter5" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 50.0
+margin_right = 55.0
+margin_bottom = 6.0
+texture = ExtResource( 15 )
+
+[node name="Letter6" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 56.0
+margin_right = 61.0
+margin_bottom = 6.0
+texture = ExtResource( 10 )
+
+[node name="Letter7" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 62.0
+margin_right = 67.0
+margin_bottom = 6.0
+texture = ExtResource( 7 )
+
+[node name="Letter8" type="TextureRect" parent="Container/OptBtn/Label/HBoxContainer"]
+margin_left = 68.0
+margin_right = 73.0
+margin_bottom = 6.0
+texture = ExtResource( 11 )
+
+[node name="HelpBtn" type="TextureButton" parent="Container"]
+visible = false
+margin_left = 64.0
+margin_top = 248.0
+margin_right = 160.0
+margin_bottom = 280.0
+script = ExtResource( 24 )
+
+[node name="Texture" type="TileMap" parent="Container/HelpBtn"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 536870919, 0, 1, 536870918, 0, 2, 536870918, 0, 3, 536870918, 0, 4, 536870918, 0, 5, 536870917, 0, 65536, 536870927, 0, 65537, 536870926, 0, 65538, 536870926, 0, 65539, 536870926, 0, 65540, 536870926, 0, 65541, 536870925, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="VBoxContainer" parent="Container/HelpBtn"]
+margin_right = 96.0
+margin_bottom = 32.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/HelpBtn/Label"]
+margin_top = 13.0
+margin_right = 96.0
+margin_bottom = 19.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/HelpBtn/Label/HBoxContainer"]
+margin_left = 32.0
+margin_right = 40.0
+margin_bottom = 6.0
+texture = ExtResource( 37 )
+
+[node name="Letter2" type="TextureRect" parent="Container/HelpBtn/Label/HBoxContainer"]
+margin_left = 41.0
+margin_right = 46.0
+margin_bottom = 6.0
+texture = ExtResource( 21 )
+
+[node name="Letter3" type="TextureRect" parent="Container/HelpBtn/Label/HBoxContainer"]
+margin_left = 47.0
+margin_right = 52.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter4" type="TextureRect" parent="Container/HelpBtn/Label/HBoxContainer"]
+margin_left = 53.0
+margin_right = 58.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter5" type="TextureRect" parent="Container/HelpBtn/Label/HBoxContainer"]
+margin_left = 59.0
+margin_right = 64.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="BackBtn" type="TextureButton" parent="Container"]
+visible = false
+margin_left = 32.0
+margin_top = 64.0
+margin_right = 48.0
+margin_bottom = 80.0
+script = ExtResource( 24 )
+
+[node name="Texture" type="TileMap" parent="Container/BackBtn"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 16, 0 )
+
+[node name="Label" type="VBoxContainer" parent="Container/BackBtn"]
+margin_right = 16.0
+margin_bottom = 15.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/BackBtn/Label"]
+margin_top = 4.0
+margin_right = 16.0
+margin_bottom = 10.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/BackBtn/Label/HBoxContainer"]
+margin_left = 4.0
+margin_right = 12.0
+margin_bottom = 6.0
+texture = ExtResource( 22 )
+
+[node name="LevelsPage" parent="Container" instance=ExtResource( 30 )]
+visible = false
+position = Vector2( 32, 104 )
+
+[node name="ModeOption" parent="Container" instance=ExtResource( 27 )]
+visible = false
+position = Vector2( 32, 112 )
+
+[node name="Version" type="HBoxContainer" parent="Container"]
+margin_left = 80.0
+margin_top = 333.0
+margin_right = 176.0
+margin_bottom = 339.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="Letter1" type="TextureRect" parent="Container/Version"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 9 )
+
+[node name="Letter2" type="TextureRect" parent="Container/Version"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Major" type="TextureRect" parent="Container/Version"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter4" type="TextureRect" parent="Container/Version"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Minor" type="TextureRect" parent="Container/Version"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 38 )
+
+[node name="Letter6" type="TextureRect" parent="Container/Version"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Patch" type="TextureRect" parent="Container/Version"]
+margin_left = 48.0
+margin_right = 53.0
+margin_bottom = 6.0
+texture = ExtResource( 31 )
+
+[node name="Letter8" type="TextureRect" parent="Container/Version"]
+margin_left = 54.0
+margin_right = 59.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter9" type="TextureRect" parent="Container/Version"]
+margin_left = 60.0
+margin_right = 65.0
+margin_bottom = 6.0
+texture = ExtResource( 34 )
+
+[node name="Letter10" type="TextureRect" parent="Container/Version"]
+margin_left = 66.0
+margin_right = 71.0
+margin_bottom = 6.0
+texture = ExtResource( 6 )
+
+[node name="Letter11" type="TextureRect" parent="Container/Version"]
+margin_left = 72.0
+margin_right = 77.0
+margin_bottom = 6.0
+texture = ExtResource( 12 )
+
+[node name="Letter12" type="TextureRect" parent="Container/Version"]
+margin_left = 78.0
+margin_right = 83.0
+margin_bottom = 6.0
+texture = ExtResource( 16 )
+
+[connection signal="pressed" from="Container/PlayBtn" to="." method="_on_PlayBtn_pressed"]
+[connection signal="pressed" from="Container/LvlBtn" to="." method="_on_LvlBtn_pressed"]
+[connection signal="pressed" from="Container/OptBtn" to="." method="_on_OptBtn_pressed"]
+[connection signal="pressed" from="Container/HelpBtn" to="." method="_on_HelpBtn_pressed"]
+[connection signal="pressed" from="Container/BackBtn" to="." method="_on_BackBtn_pressed"]

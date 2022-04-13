@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://materials/boards.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/Sliders/1.png" type="Texture" id=2]
+[ext_resource path="res://misc/TextureButton.gd" type="Script" id=3]
+[ext_resource path="res://assets/Sliders/2.png" type="Texture" id=4]
+[ext_resource path="res://scenes/GameMenu/LevelsPage.gd" type="Script" id=5]
+
+[node name="LevelsPage" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="MainPaper" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 32, 0, 1, 33, 0, 2, 33, 0, 3, 33, 0, 4, 34, 0, 65536, 35, 0, 65537, 36, 0, 65538, 36, 0, 65539, 36, 0, 65540, 37, 0, 131072, 35, 0, 131073, 36, 0, 131074, 36, 0, 131075, 36, 0, 131076, 37, 0, 196608, 35, 0, 196609, 36, 0, 196610, 36, 0, 196611, 36, 0, 196612, 37, 0, 262144, 35, 0, 262145, 36, 0, 262146, 36, 0, 262147, 36, 0, 262148, 37, 0, 327680, 38, 0, 327681, 39, 0, 327682, 39, 0, 327683, 39, 0, 327684, 40, 0 )
+
+[node name="PaginatorPaper" type="TileMap" parent="."]
+position = Vector2( 32, 78 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 196610, 41, 0, 196611, 43, 0 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 136.0
+margin_bottom = 168.0
+custom_constants/separation = 37
+
+[node name="Line1" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 112.0
+custom_constants/separation = 40
+
+[node name="Line2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 37.0
+margin_right = 112.0
+margin_bottom = 37.0
+custom_constants/separation = 40
+
+[node name="Line3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 74.0
+margin_right = 112.0
+margin_bottom = 74.0
+custom_constants/separation = 40
+
+[node name="Line4" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 111.0
+margin_right = 112.0
+margin_bottom = 111.0
+custom_constants/separation = 40
+
+[node name="PrevBtn" type="TextureButton" parent="."]
+margin_left = 115.0
+margin_top = 184.0
+margin_right = 123.0
+margin_bottom = 196.0
+script = ExtResource( 3 )
+
+[node name="1" type="Sprite" parent="PrevBtn"]
+position = Vector2( 6, 6 )
+texture = ExtResource( 2 )
+
+[node name="NextBtn" type="TextureButton" parent="."]
+margin_left = 133.0
+margin_top = 184.0
+margin_right = 141.0
+margin_bottom = 196.0
+script = ExtResource( 3 )
+
+[node name="2" type="Sprite" parent="NextBtn"]
+position = Vector2( 2, 6 )
+texture = ExtResource( 4 )
+
+[connection signal="pressed" from="PrevBtn" to="." method="_on_PrevBtn_pressed"]
+[connection signal="pressed" from="NextBtn" to="." method="_on_NextBtn_pressed"]

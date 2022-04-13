@@ -1,0 +1,1765 @@
+[gd_scene load_steps=50 format=2]
+
+[ext_resource path="res://scenes/Background/Background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://materials/boards.tres" type="TileSet" id=2]
+[ext_resource path="res://assets/Small Text/19.png" type="Texture" id=3]
+[ext_resource path="res://assets/Small Text/9.png" type="Texture" id=4]
+[ext_resource path="res://assets/Small Text/16.png" type="Texture" id=5]
+[ext_resource path="res://assets/Small Text/11.png" type="Texture" id=6]
+[ext_resource path="res://assets/Small Icons/1.png" type="Texture" id=7]
+[ext_resource path="res://misc/TextureButton.gd" type="Script" id=8]
+[ext_resource path="res://materials/btns.tres" type="TileSet" id=9]
+[ext_resource path="res://assets/Small Icons/2.png" type="Texture" id=10]
+[ext_resource path="res://assets/Big Text/18.png" type="Texture" id=11]
+[ext_resource path="res://assets/Big Text/12.png" type="Texture" id=12]
+[ext_resource path="res://assets/Big Text/14.png" type="Texture" id=13]
+[ext_resource path="res://assets/Big Text/3.png" type="Texture" id=14]
+[ext_resource path="res://assets/Big Text/20.png" type="Texture" id=15]
+[ext_resource path="res://assets/Big Text/15.png" type="Texture" id=16]
+[ext_resource path="res://assets/Big Text/19.png" type="Texture" id=17]
+[ext_resource path="res://materials/tileset3.tres" type="TileSet" id=18]
+[ext_resource path="res://assets/Big Text/24.png" type="Texture" id=19]
+[ext_resource path="res://assets/Big Text/5.png" type="Texture" id=20]
+[ext_resource path="res://assets/Big Text/2.png" type="Texture" id=21]
+[ext_resource path="res://scenes/Help/Help.gd" type="Script" id=22]
+[ext_resource path="res://assets/Small Text/21.png" type="Texture" id=23]
+[ext_resource path="res://assets/Small Text/1.png" type="Texture" id=24]
+[ext_resource path="res://assets/Small Text/18.png" type="Texture" id=25]
+[ext_resource path="res://assets/Small Text/49.png" type="Texture" id=26]
+[ext_resource path="res://assets/Small Text/5.png" type="Texture" id=27]
+[ext_resource path="res://assets/Small Text/23.png" type="Texture" id=28]
+[ext_resource path="res://assets/Small Text/15.png" type="Texture" id=29]
+[ext_resource path="res://assets/Small Text/4.png" type="Texture" id=30]
+[ext_resource path="res://assets/Small Text/2.png" type="Texture" id=31]
+[ext_resource path="res://assets/Small Text/20.png" type="Texture" id=32]
+[ext_resource path="res://assets/Small Text/3.png" type="Texture" id=33]
+[ext_resource path="res://assets/Small Text/13.png" type="Texture" id=34]
+[ext_resource path="res://assets/Small Text/22.png" type="Texture" id=35]
+[ext_resource path="res://assets/Small Text/14.png" type="Texture" id=36]
+[ext_resource path="res://assets/Small Text/25.png" type="Texture" id=37]
+[ext_resource path="res://assets/Small Text/8.png" type="Texture" id=38]
+[ext_resource path="res://assets/Small Text/40.png" type="Texture" id=39]
+[ext_resource path="res://assets/tileset.png" type="Texture" id=40]
+[ext_resource path="res://assets/Sliders/1.png" type="Texture" id=41]
+[ext_resource path="res://assets/Small Text/24.png" type="Texture" id=42]
+[ext_resource path="res://assets/Small Text/12.png" type="Texture" id=43]
+[ext_resource path="res://assets/Small Text/48.png" type="Texture" id=44]
+[ext_resource path="res://assets/Small Text/6.png" type="Texture" id=45]
+[ext_resource path="res://assets/Big Text/8.png" type="Texture" id=46]
+[ext_resource path="res://assets/Big Text/9.png" type="Texture" id=47]
+[ext_resource path="res://assets/Small Text/51.png" type="Texture" id=48]
+[ext_resource path="res://assets/Small Icons/26.png" type="Texture" id=49]
+
+[node name="Help" type="Node2D"]
+script = ExtResource( 22 )
+
+[node name="Background" parent="." instance=ExtResource( 1 )]
+
+[node name="BoardContainer" type="Node2D" parent="."]
+position = Vector2( 8, 19 )
+
+[node name="Board" type="TileMap" parent="BoardContainer"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 16, 0, 1, 17, 0, 2, 17, 0, 3, 17, 0, 4, 17, 0, 5, 18, 0, 65536, 20, 0, 65537, 21, 0, 65538, 21, 0, 65539, 21, 0, 65540, 21, 0, 65541, 22, 0, 131072, 20, 0, 131073, 21, 0, 131074, 21, 0, 131075, 21, 0, 131076, 21, 0, 131077, 22, 0, 196608, 24, 0, 196609, 25, 0, 196610, 25, 0, 196611, 25, 0, 196612, 25, 0, 196613, 26, 0 )
+
+[node name="Paper" type="TileMap" parent="BoardContainer"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 32, 0, 1, 33, 0, 2, 33, 0, 3, 33, 0, 4, 33, 0, 5, 34, 0, 65536, 35, 0, 65537, 36, 0, 65538, 36, 0, 65539, 36, 0, 65540, 36, 0, 65541, 37, 0, 131072, 35, 0, 131073, 36, 0, 131074, 36, 0, 131075, 36, 0, 131076, 36, 0, 131077, 37, 0, 196608, 38, 0, 196609, 39, 0, 196610, 39, 0, 196611, 39, 0, 196612, 39, 0, 196613, 40, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="GameBoard" type="TileMap" parent="BoardContainer"]
+position = Vector2( 8, 0 )
+tile_set = ExtResource( 18 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 589826, 4, 0, 589827, 9, 0, 589828, 9, 0, 589829, 9, 0, 589830, 9, 0, 589831, 9, 0, 589832, 4, 0, 655362, 3, 0, 655363, 16, 0, 655364, 16, 0, 655365, 16, 0, 655366, 16, 0, 655367, 16, 0, 655368, 3, 0, 720898, 3, 0, 720899, 16, 0, 720900, 16, 0, 720901, 16, 0, 720902, 16, 0, 720903, 16, 0, 720904, 3, 0, 786434, 3, 0, 786435, 16, 0, 786436, 16, 0, 786437, 16, 0, 786438, 16, 0, 786439, 16, 0, 786440, 3, 0, 851970, 8, 0, 851971, 9, 0, 851972, 9, 0, 851973, 9, 0, 851974, 9, 0, 851975, 9, 0, 851976, 8, 0 )
+
+[node name="SkipBtn" type="TextureButton" parent="BoardContainer"]
+margin_left = 5.0
+margin_top = 293.0
+margin_right = 37.0
+margin_bottom = 325.0
+script = ExtResource( 8 )
+
+[node name="Texture" type="TileMap" parent="BoardContainer/SkipBtn"]
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 21, 0, 1, 23, 0, 65536, 29, 0, 65537, 31, 0 )
+
+[node name="Label" type="Node2D" parent="BoardContainer/SkipBtn"]
+position = Vector2( -1, 8 )
+
+[node name="19" type="Sprite" parent="BoardContainer/SkipBtn/Label"]
+position = Vector2( 8, 7 )
+texture = ExtResource( 3 )
+
+[node name="20" type="Sprite" parent="BoardContainer/SkipBtn/Label"]
+position = Vector2( 14, 7 )
+texture = ExtResource( 6 )
+
+[node name="21" type="Sprite" parent="BoardContainer/SkipBtn/Label"]
+position = Vector2( 20, 7 )
+texture = ExtResource( 4 )
+
+[node name="22" type="Sprite" parent="BoardContainer/SkipBtn/Label"]
+position = Vector2( 26, 7 )
+texture = ExtResource( 5 )
+
+[node name="PrevBtn" type="TextureButton" parent="BoardContainer"]
+margin_left = 114.0
+margin_top = 293.0
+margin_right = 146.0
+margin_bottom = 325.0
+script = ExtResource( 8 )
+
+[node name="Texture" type="TileMap" parent="BoardContainer/PrevBtn"]
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 21, 0, 1, 23, 0, 65536, 29, 0, 65537, 31, 0 )
+
+[node name="Label" type="Sprite" parent="BoardContainer/PrevBtn"]
+position = Vector2( 16, 15 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="NextBtn" type="TextureButton" parent="BoardContainer"]
+margin_left = 155.0
+margin_top = 293.0
+margin_right = 187.0
+margin_bottom = 325.0
+script = ExtResource( 8 )
+
+[node name="Texture" type="TileMap" parent="BoardContainer/NextBtn"]
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 21, 0, 1, 23, 0, 65536, 29, 0, 65537, 31, 0 )
+
+[node name="Label" type="Sprite" parent="BoardContainer/NextBtn"]
+position = Vector2( 16, 15 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="PlayBtn" type="TextureButton" parent="BoardContainer"]
+visible = false
+margin_left = 155.0
+margin_top = 293.0
+margin_right = 187.0
+margin_bottom = 325.0
+script = ExtResource( 8 )
+
+[node name="Texture" type="TileMap" parent="BoardContainer/PlayBtn"]
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 5, 0, 1, 7, 0, 65536, 13, 0, 65537, 15, 0 )
+
+[node name="Label" type="Node2D" parent="BoardContainer/PlayBtn"]
+position = Vector2( -1, 8 )
+
+[node name="16" type="Sprite" parent="BoardContainer/PlayBtn/Label"]
+position = Vector2( 8, 7 )
+texture = ExtResource( 5 )
+
+[node name="17" type="Sprite" parent="BoardContainer/PlayBtn/Label"]
+position = Vector2( 14, 7 )
+texture = ExtResource( 43 )
+
+[node name="18" type="Sprite" parent="BoardContainer/PlayBtn/Label"]
+position = Vector2( 20, 7 )
+texture = ExtResource( 24 )
+
+[node name="19" type="Sprite" parent="BoardContainer/PlayBtn/Label"]
+position = Vector2( 26, 7 )
+texture = ExtResource( 37 )
+
+[node name="ControlsPage" type="Node2D" parent="BoardContainer"]
+visible = false
+
+[node name="Title" type="HBoxContainer" parent="BoardContainer/ControlsPage"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 176.0
+margin_bottom = 35.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 36.0
+margin_right = 46.0
+margin_bottom = 11.0
+texture = ExtResource( 14 )
+
+[node name="TextureRect2" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 47.0
+margin_right = 57.0
+margin_bottom = 11.0
+texture = ExtResource( 16 )
+
+[node name="TextureRect3" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 58.0
+margin_right = 68.0
+margin_bottom = 11.0
+texture = ExtResource( 13 )
+
+[node name="TextureRect4" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 69.0
+margin_right = 79.0
+margin_bottom = 11.0
+texture = ExtResource( 15 )
+
+[node name="TextureRect5" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 80.0
+margin_right = 90.0
+margin_bottom = 11.0
+texture = ExtResource( 11 )
+
+[node name="TextureRect6" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 91.0
+margin_right = 101.0
+margin_bottom = 11.0
+texture = ExtResource( 16 )
+
+[node name="TextureRect7" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 102.0
+margin_right = 112.0
+margin_bottom = 11.0
+texture = ExtResource( 12 )
+
+[node name="TextureRect8" type="TextureRect" parent="BoardContainer/ControlsPage/Title"]
+margin_left = 113.0
+margin_right = 123.0
+margin_bottom = 11.0
+texture = ExtResource( 17 )
+
+[node name="Description" type="VBoxContainer" parent="BoardContainer/ControlsPage"]
+margin_left = 16.0
+margin_top = 48.0
+margin_right = 176.0
+margin_bottom = 104.0
+
+[node name="Line1" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description"]
+margin_right = 160.0
+margin_bottom = 6.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line1"]
+margin_left = 22.0
+margin_right = 39.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line1"]
+margin_left = 44.0
+margin_right = 85.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word2"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 26 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line1"]
+margin_left = 90.0
+margin_right = 137.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 39 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter8" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 39 )
+
+[node name="Letter10" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 30 )
+
+[node name="Letter12" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 39 )
+
+[node name="Letter13" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter14" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line1/Word3"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 26 )
+
+[node name="Line2" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description"]
+margin_top = 10.0
+margin_right = 160.0
+margin_bottom = 16.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line2"]
+margin_left = 22.0
+margin_right = 51.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word1"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word1"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 38 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line2"]
+margin_left = 56.0
+margin_right = 91.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word2"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line2"]
+margin_left = 96.0
+margin_right = 137.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 31 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line2/Word3"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Line3" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description"]
+margin_top = 20.0
+margin_right = 160.0
+margin_bottom = 26.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line3"]
+margin_left = 54.0
+margin_right = 65.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line3"]
+margin_left = 70.0
+margin_right = 105.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 5 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line3/Word2"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Line4" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description"]
+margin_top = 30.0
+margin_right = 160.0
+margin_bottom = 36.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line4"]
+margin_left = 17.0
+margin_right = 28.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line4"]
+margin_left = 33.0
+margin_right = 56.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 34 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line4"]
+margin_left = 61.0
+margin_right = 84.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 37 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/ControlsPage/Description/Line4"]
+margin_left = 89.0
+margin_right = 142.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 38 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter8" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter9" type="TextureRect" parent="BoardContainer/ControlsPage/Description/Line4/Word4"]
+margin_left = 48.0
+margin_right = 53.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Player" type="Sprite" parent="BoardContainer/ControlsPage"]
+position = Vector2( 87, 176 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 9
+
+[node name="Left" type="Sprite" parent="BoardContainer/ControlsPage"]
+position = Vector2( 79, 184 )
+texture = ExtResource( 41 )
+
+[node name="Right" type="Sprite" parent="BoardContainer/ControlsPage"]
+position = Vector2( 110, 184 )
+rotation = -3.14159
+texture = ExtResource( 41 )
+
+[node name="Up" type="Sprite" parent="BoardContainer/ControlsPage"]
+position = Vector2( 95, 168 )
+rotation = 1.5708
+texture = ExtResource( 41 )
+
+[node name="Down" type="Sprite" parent="BoardContainer/ControlsPage"]
+position = Vector2( 95, 198 )
+rotation = 4.71239
+texture = ExtResource( 41 )
+
+[node name="BoxesPage" type="Node2D" parent="BoardContainer"]
+visible = false
+
+[node name="Title" type="HBoxContainer" parent="BoardContainer/BoxesPage"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 176.0
+margin_bottom = 35.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BoardContainer/BoxesPage/Title"]
+margin_left = 53.0
+margin_right = 63.0
+margin_bottom = 11.0
+texture = ExtResource( 21 )
+
+[node name="TextureRect2" type="TextureRect" parent="BoardContainer/BoxesPage/Title"]
+margin_left = 64.0
+margin_right = 74.0
+margin_bottom = 11.0
+texture = ExtResource( 16 )
+
+[node name="TextureRect3" type="TextureRect" parent="BoardContainer/BoxesPage/Title"]
+margin_left = 75.0
+margin_right = 85.0
+margin_bottom = 11.0
+texture = ExtResource( 19 )
+
+[node name="TextureRect4" type="TextureRect" parent="BoardContainer/BoxesPage/Title"]
+margin_left = 86.0
+margin_right = 96.0
+margin_bottom = 11.0
+texture = ExtResource( 20 )
+
+[node name="TextureRect5" type="TextureRect" parent="BoardContainer/BoxesPage/Title"]
+margin_left = 97.0
+margin_right = 107.0
+margin_bottom = 11.0
+texture = ExtResource( 17 )
+
+[node name="Description" type="VBoxContainer" parent="BoardContainer/BoxesPage"]
+margin_left = 16.0
+margin_top = 48.0
+margin_right = 177.0
+margin_bottom = 104.0
+
+[node name="Line1" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description"]
+margin_right = 161.0
+margin_bottom = 6.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line1"]
+margin_left = 4.0
+margin_right = 27.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 34 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word1"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line1"]
+margin_left = 32.0
+margin_right = 49.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 31 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 42 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line1"]
+margin_left = 54.0
+margin_right = 65.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line1"]
+margin_left = 70.0
+margin_right = 117.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter8" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word4"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Word5" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line1"]
+margin_left = 122.0
+margin_right = 157.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 5 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line1/Word5"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 44 )
+
+[node name="Line2" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description"]
+margin_top = 10.0
+margin_right = 161.0
+margin_bottom = 16.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line2"]
+margin_left = 22.0
+margin_right = 39.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 37 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line2"]
+margin_left = 44.0
+margin_right = 61.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line2"]
+margin_left = 66.0
+margin_right = 89.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 34 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line2"]
+margin_left = 94.0
+margin_right = 111.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 31 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word4"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word4"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 42 )
+
+[node name="Word5" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line2"]
+margin_left = 116.0
+margin_right = 139.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word5"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word5"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word5"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line2/Word5"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 37 )
+
+[node name="Line3" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description"]
+margin_top = 20.0
+margin_right = 161.0
+margin_bottom = 26.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line3"]
+margin_left = 23.0
+margin_right = 34.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line3"]
+margin_left = 39.0
+margin_right = 80.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 45 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 28 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word3"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 30 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/BoxesPage/Description/Line3"]
+margin_left = 85.0
+margin_right = 138.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 30 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter8" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter9" type="TextureRect" parent="BoardContainer/BoxesPage/Description/Line3/Word4"]
+margin_left = 48.0
+margin_right = 53.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="CBox" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 71, 160 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 74
+
+[node name="Arrow1" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 93, 168 )
+rotation = -3.14159
+texture = ExtResource( 41 )
+
+[node name="CPoint" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 103, 160 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 73
+
+[node name="BBox" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 71, 192 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 75
+
+[node name="Arrow2" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 93, 200 )
+rotation = -3.14159
+texture = ExtResource( 41 )
+
+[node name="BPoint" type="Sprite" parent="BoardContainer/BoxesPage"]
+position = Vector2( 103, 192 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 76
+
+[node name="Hint1Page" type="Node2D" parent="BoardContainer"]
+visible = false
+
+[node name="Title" type="HBoxContainer" parent="BoardContainer/Hint1Page"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 176.0
+margin_bottom = 35.0
+custom_constants/separation = 1
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BoardContainer/Hint1Page/Title"]
+margin_left = 58.0
+margin_right = 68.0
+margin_bottom = 11.0
+texture = ExtResource( 46 )
+
+[node name="TextureRect2" type="TextureRect" parent="BoardContainer/Hint1Page/Title"]
+margin_left = 69.0
+margin_right = 79.0
+margin_bottom = 11.0
+texture = ExtResource( 47 )
+
+[node name="TextureRect3" type="TextureRect" parent="BoardContainer/Hint1Page/Title"]
+margin_left = 80.0
+margin_right = 90.0
+margin_bottom = 11.0
+texture = ExtResource( 13 )
+
+[node name="TextureRect4" type="TextureRect" parent="BoardContainer/Hint1Page/Title"]
+margin_left = 91.0
+margin_right = 101.0
+margin_bottom = 11.0
+texture = ExtResource( 15 )
+
+[node name="Description" type="VBoxContainer" parent="BoardContainer/Hint1Page"]
+margin_left = 16.0
+margin_top = 48.0
+margin_right = 177.0
+margin_bottom = 104.0
+
+[node name="Line1" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description"]
+margin_right = 161.0
+margin_bottom = 6.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 12.0
+margin_right = 29.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 37 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word1"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 34.0
+margin_right = 51.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 56.0
+margin_right = 85.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 5 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word3"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 90.0
+margin_right = 110.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 48 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word4"]
+margin_left = 6.0
+margin_right = 14.0
+margin_bottom = 6.0
+texture = ExtResource( 49 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word4"]
+margin_left = 15.0
+margin_right = 20.0
+margin_bottom = 6.0
+texture = ExtResource( 48 )
+
+[node name="Word5" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 115.0
+margin_right = 126.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word5"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word5"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Word6" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line1"]
+margin_left = 131.0
+margin_right = 148.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word6"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 48 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word6"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line1/Word6"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 48 )
+
+[node name="Line2" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description"]
+margin_top = 10.0
+margin_right = 161.0
+margin_bottom = 16.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line2"]
+margin_left = 35.0
+margin_right = 46.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line2"]
+margin_left = 51.0
+margin_right = 92.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 25 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word2"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 32 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line2"]
+margin_left = 97.0
+margin_right = 126.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word3"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word3"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line2/Word3"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Line3" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description"]
+margin_top = 20.0
+margin_right = 161.0
+margin_bottom = 26.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Word1" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line3"]
+margin_left = 4.0
+margin_right = 15.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word1"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word1"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Word2" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line3"]
+margin_left = 20.0
+margin_right = 43.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word2"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 33 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word2"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word2"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word2"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word3" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line3"]
+margin_left = 48.0
+margin_right = 59.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word3"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word3"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 45 )
+
+[node name="Word4" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line3"]
+margin_left = 64.0
+margin_right = 123.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 36 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 29 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Letter6" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 30.0
+margin_right = 35.0
+margin_bottom = 6.0
+texture = ExtResource( 35 )
+
+[node name="Letter7" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 36.0
+margin_right = 41.0
+margin_bottom = 6.0
+texture = ExtResource( 24 )
+
+[node name="Letter8" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 42.0
+margin_right = 47.0
+margin_bottom = 6.0
+texture = ExtResource( 31 )
+
+[node name="Letter9" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 48.0
+margin_right = 53.0
+margin_bottom = 6.0
+texture = ExtResource( 43 )
+
+[node name="Letter10" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word4"]
+margin_left = 54.0
+margin_right = 59.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Word5" type="HBoxContainer" parent="BoardContainer/Hint1Page/Description/Line3"]
+margin_left = 128.0
+margin_right = 157.0
+margin_bottom = 6.0
+custom_constants/separation = 1
+
+[node name="Letter1" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word5"]
+margin_right = 5.0
+margin_bottom = 6.0
+texture = ExtResource( 4 )
+
+[node name="Letter2" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word5"]
+margin_left = 6.0
+margin_right = 11.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter3" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word5"]
+margin_left = 12.0
+margin_right = 17.0
+margin_bottom = 6.0
+texture = ExtResource( 3 )
+
+[node name="Letter4" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word5"]
+margin_left = 18.0
+margin_right = 23.0
+margin_bottom = 6.0
+texture = ExtResource( 23 )
+
+[node name="Letter5" type="TextureRect" parent="BoardContainer/Hint1Page/Description/Line3/Word5"]
+margin_left = 24.0
+margin_right = 29.0
+margin_bottom = 6.0
+texture = ExtResource( 27 )
+
+[node name="Player" type="Sprite" parent="BoardContainer/Hint1Page"]
+position = Vector2( 119, 176 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 9
+
+[node name="CBox" type="Sprite" parent="BoardContainer/Hint1Page"]
+position = Vector2( 119, 192 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 74
+
+[node name="CPoint" type="Sprite" parent="BoardContainer/Hint1Page"]
+position = Vector2( 71, 160 )
+z_index = 1
+texture = ExtResource( 40 )
+centered = false
+hframes = 17
+vframes = 5
+frame = 73
+
+[connection signal="pressed" from="BoardContainer/SkipBtn" to="." method="_on_SkipBtn_pressed"]
+[connection signal="pressed" from="BoardContainer/PrevBtn" to="." method="_on_PrevBtn_pressed"]
+[connection signal="pressed" from="BoardContainer/NextBtn" to="." method="_on_NextBtn_pressed"]
+[connection signal="pressed" from="BoardContainer/PlayBtn" to="." method="_on_PlayBtn_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="Background" type="ColorRect"]
+margin_right = 208.0
+margin_bottom = 368.0
+color = Color( 0.0784314, 0.0470588, 0.109804, 1 )
+__meta__ = {
+"_editor_description_": ""
+}
