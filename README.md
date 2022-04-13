@@ -1,12 +1,8 @@
-## Sokoban
+# Sokoban
 
 It is classic [sokoban-style](https://en.wikipedia.org/wiki/Sokoban) game with some additional features. Made with Godot 3.4.3 and assets from <a href="https://itch.io/" target="_blank">itch.io</a>.
 
----
-
 [PLAY](https://korvin89.github.io/games/sokoban/)
-
----
 
 ### Development:
 
